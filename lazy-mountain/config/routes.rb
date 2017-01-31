@@ -7,7 +7,7 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'weather#index'
 
-  post 'weather/write_csv' => 'weather#write_csv'
+  get 'weather/get_weather' => 'weather#get_weather'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
