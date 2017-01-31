@@ -1,2 +1,7 @@
-
+= form_tag("weather/get_weather", method: "get") do
+  = label_tag(:start_date, "Start Date (yyyy/mm/dd):")
+  = select_date Date.today, prefix: :start_date, :start_year => 2000, :end_year => 2017
+  = label_tag(:end, "End Date (yyyy/mm/dd):")
+  = select_date Date.today, prefix: :end_date, :start_year => 2000, :end_year => 2017
+  = submit_tag("Submit")
 
